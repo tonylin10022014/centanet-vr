@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>城市花園 1期 3座 中層 H室 3房 (1套房) 樓盤介紹｜中原地產｜360° VR 樓盤</title>
+<script src="https://cdn.jsdelivr.net/npm/three@0.126.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.126.1/examples/js/controls/OrbitControls.js"></script>
+<style>
+*{box-sizing:border-box}
+body{font-family:"Microsoft JhengHei","PingFang TC","Noto Sans TC",Arial,sans-serif;margin:0;background:#f4f6f8;display:flex;flex-direction:column;height:100vh}
+header{background:#2f3640;color:#fff;padding:10px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+header a.back{color:#74b9ff;text-decoration:none;font-size:14px;white-space:nowrap}
+header .tinfo{flex:1;min-width:200px}
+header b{font-size:16px}
+header .meta{color:#dcdde1;font-size:12.5px;margin-left:10px}
+.btn{display:inline-block;background:#0984e3;color:#fff;text-decoration:none;font-size:12.5px;padding:5px 12px;border-radius:5px;border:none;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:#576574}
+.tabs{display:flex;background:#353b48}
+.tabs .tab{flex:1;padding:10px 6px;background:none;border:none;color:#b2bec3;font-size:14px;cursor:pointer;font-family:inherit}
+.tabs .tab.active{color:#fff;background:#2f3640;font-weight:bold}
+main{flex:1;position:relative;overflow:hidden}
+.sec{position:absolute;inset:0;overflow:auto}
+#viewer{position:absolute;inset:0;background:#1e272e}
+#viewer canvas{display:block}
+#loading{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#dcdde1;font-size:14px;background:rgba(0,0,0,.45);padding:10px 22px;border-radius:8px;z-index:5}
+#pano-empty{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#b2bec3;font-size:15px;text-align:center;max-width:420px;line-height:1.8}
+#scenebar{position:absolute;left:0;right:0;bottom:0;display:flex;gap:8px;padding:10px 12px;overflow-x:auto;background:linear-gradient(transparent,rgba(0,0,0,.65) 40%);z-index:4}
+.scn{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;border:2px solid transparent;border-radius:8px;padding:3px;background:rgba(255,255,255,.08)}
+.scn img{width:74px;height:46px;object-fit:cover;border-radius:5px;display:block;background:#2d3436}
+.scn span{color:#fff;font-size:11px;text-shadow:0 1px 2px #000;max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.scn.on{border-color:#fdcb6e;background:rgba(253,203,110,.25)}
+#ctrbar{position:absolute;top:10px;right:10px;z-index:5;display:flex;gap:6px}
+#ctrbar .btn{background:rgba(45,52,54,.72)}
+#ctrbar .btn.on{background:#0984e3}
+.wrap{padding:16px;max-width:1180px;margin:0 auto}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.pgrid figure{margin:0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,.12);cursor:zoom-in}
+.pgrid img{width:100%;height:150px;object-fit:cover;display:block}
+.pgrid figcaption{font-size:12px;color:#636e72;padding:6px 9px}
+.planlist img{width:100%;max-width:900px;display:block;margin:0 auto 18px;background:#fff;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,.12)}
+.lsec{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:14px;box-shadow:0 1px 5px rgba(0,0,0,.12)}
+.lsec h3{margin:0 0 10px;font-size:15px;color:#2d3436}
+.lsec a{display:block;color:#0984e3;text-decoration:none;font-size:13px;padding:4px 0;word-break:break-all}
+.lsec a:hover{text-decoration:underline}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+#lightbox.on{display:flex}
+#lightbox img{max-width:96vw;max-height:94vh}
+footer{background:#2f3640;color:#b2bec3;font-size:11.5px;text-align:center;padding:7px}
+</style>
+</head>
+<body>
+<header>
+ <a class="back" href="../index.html">‹ 樓盤列表</a>
+ <div class="tinfo"><b>城市花園 1期 3座 中層 H室 3房 (1套房) 樓盤介紹｜中原地產</b><span class="meta"></span></div>
+ <a class="btn ghost" href="https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk" target="_blank" rel="noopener">原始樓盤 ↗</a>
+<a class="btn" href="https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk" target="_blank" rel="noopener">官方 VR ↗</a>
+</header>
+<nav class="tabs">
+ <button id="tab-pano" class="tab active" onclick="switchTab('pano')">🌐 360° 全景 (12)</button>
+ <button id="tab-photo" class="tab" onclick="switchTab('photo')">🖼 相片 (0)</button>
+ <button id="tab-plan" class="tab" onclick="switchTab('plan')">📐 平面圖 (0)</button>
+ <button id="tab-link" class="tab" onclick="switchTab('link')">🔗 連結</button>
+</nav>
+<main>
+ <section id="sec-pano" class="sec">
+  <div id="viewer"><div id="loading">全景載入中…</div><div id="pano-empty" style="display:none">此樓盤沒有可離線瀏覽的 360° 全景<br/>（可能屬 Matterport 或外部 VR 平台）<br/>請看「相片」分頁，或到「連結」分頁開啟官方 VR</div></div>
+  <div id="ctrbar">
+   <button class="btn" id="btnRotate" onclick="toggleRotate()">⟳ 自動轉</button>
+   <button class="btn" onclick="goFull()">⛶ 全螢幕</button>
+  </div>
+  <div id="scenebar"></div>
+ </section>
+ <section id="sec-photo" class="sec" style="display:none"><div class="wrap"><div class="pgrid"><p style="color:#636e72">沒有相片</p></div></div></section>
+ <section id="sec-plan" class="sec" style="display:none"><div class="wrap planlist"><p style="color:#636e72">沒有平面圖</p></div></section>
+ <section id="sec-link" class="sec" style="display:none"><div class="wrap"><div class="lsec"><h3>🏠 原始樓盤</h3><a href="https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk" target="_blank" rel="noopener">https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk</a></div><div class="lsec"><h3>🌐 官方 VR 連結</h3><a href="https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk" target="_blank" rel="noopener">https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&amp;useRoomArea=0&amp;cn=0&amp;aitour=1&amp;staff=0&amp;lang=hk</a></div></div></section>
+</main>
+<div id="lightbox" onclick="this.classList.remove('on')"><img id="lbimg" alt=""/></div>
+<footer>抓取：2026-10-23 22:57:20｜Three.js 立方體全景檢視器（與中原官方 VR 同面序）</footer>
+<script>
+var DATA = {"title": "城市花園 1期 3座 中層 H室 3房 (1套房) 樓盤介紹｜中原地產", "scenes": [{"name": "大門", "thumb": "../photos/CNHK-26027/thumb_01.jpg", "faces": ["../photos/CNHK-26027/pano_01_l.jpg", "../photos/CNHK-26027/pano_01_r.jpg", "../photos/CNHK-26027/pano_01_u.jpg", "../photos/CNHK-26027/pano_01_d.jpg", "../photos/CNHK-26027/pano_01_f.jpg", "../photos/CNHK-26027/pano_01_b.jpg"]}, {"name": "走廊", "thumb": "../photos/CNHK-26027/thumb_02.jpg", "faces": ["../photos/CNHK-26027/pano_02_l.jpg", "../photos/CNHK-26027/pano_02_r.jpg", "../photos/CNHK-26027/pano_02_u.jpg", "../photos/CNHK-26027/pano_02_d.jpg", "../photos/CNHK-26027/pano_02_f.jpg", "../photos/CNHK-26027/pano_02_b.jpg"]}, {"name": "浴室", "thumb": "../photos/CNHK-26027/thumb_03.jpg", "faces": ["../photos/CNHK-26027/pano_03_l.jpg", "../photos/CNHK-26027/pano_03_r.jpg", "../photos/CNHK-26027/pano_03_u.jpg", "../photos/CNHK-26027/pano_03_d.jpg", "../photos/CNHK-26027/pano_03_f.jpg", "../photos/CNHK-26027/pano_03_b.jpg"]}, {"name": "睡房", "thumb": "../photos/CNHK-26027/thumb_04.jpg", "faces": ["../photos/CNHK-26027/pano_04_l.jpg", "../photos/CNHK-26027/pano_04_r.jpg", "../photos/CNHK-26027/pano_04_u.jpg", "../photos/CNHK-26027/pano_04_d.jpg", "../photos/CNHK-26027/pano_04_f.jpg", "../photos/CNHK-26027/pano_04_b.jpg"]}, {"name": "睡房 1", "thumb": "../photos/CNHK-26027/thumb_05.jpg", "faces": ["../photos/CNHK-26027/pano_05_l.jpg", "../photos/CNHK-26027/pano_05_r.jpg", "../photos/CNHK-26027/pano_05_u.jpg", "../photos/CNHK-26027/pano_05_d.jpg", "../photos/CNHK-26027/pano_05_f.jpg", "../photos/CNHK-26027/pano_05_b.jpg"]}, {"name": "走廊", "thumb": "../photos/CNHK-26027/thumb_06.jpg", "faces": ["../photos/CNHK-26027/pano_06_l.jpg", "../photos/CNHK-26027/pano_06_r.jpg", "../photos/CNHK-26027/pano_06_u.jpg", "../photos/CNHK-26027/pano_06_d.jpg", "../photos/CNHK-26027/pano_06_f.jpg", "../photos/CNHK-26027/pano_06_b.jpg"]}, {"name": "主人房", "thumb": "../photos/CNHK-26027/thumb_07.jpg", "faces": ["../photos/CNHK-26027/pano_07_l.jpg", "../photos/CNHK-26027/pano_07_r.jpg", "../photos/CNHK-26027/pano_07_u.jpg", "../photos/CNHK-26027/pano_07_d.jpg", "../photos/CNHK-26027/pano_07_f.jpg", "../photos/CNHK-26027/pano_07_b.jpg"]}, {"name": "主人浴室", "thumb": "../photos/CNHK-26027/thumb_08.jpg", "faces": ["../photos/CNHK-26027/pano_08_l.jpg", "../photos/CNHK-26027/pano_08_r.jpg", "../photos/CNHK-26027/pano_08_u.jpg", "../photos/CNHK-26027/pano_08_d.jpg", "../photos/CNHK-26027/pano_08_f.jpg", "../photos/CNHK-26027/pano_08_b.jpg"]}, {"name": "工人房", "thumb": "../photos/CNHK-26027/thumb_09.jpg", "faces": ["../photos/CNHK-26027/pano_09_l.jpg", "../photos/CNHK-26027/pano_09_r.jpg", "../photos/CNHK-26027/pano_09_u.jpg", "../photos/CNHK-26027/pano_09_d.jpg", "../photos/CNHK-26027/pano_09_f.jpg", "../photos/CNHK-26027/pano_09_b.jpg"]}, {"name": "客廳", "thumb": "../photos/CNHK-26027/thumb_10.jpg", "faces": ["../photos/CNHK-26027/pano_10_l.jpg", "../photos/CNHK-26027/pano_10_r.jpg", "../photos/CNHK-26027/pano_10_u.jpg", "../photos/CNHK-26027/pano_10_d.jpg", "../photos/CNHK-26027/pano_10_f.jpg", "../photos/CNHK-26027/pano_10_b.jpg"]}, {"name": "廚房", "thumb": "../photos/CNHK-26027/thumb_11.jpg", "faces": ["../photos/CNHK-26027/pano_11_l.jpg", "../photos/CNHK-26027/pano_11_r.jpg", "../photos/CNHK-26027/pano_11_u.jpg", "../photos/CNHK-26027/pano_11_d.jpg", "../photos/CNHK-26027/pano_11_f.jpg", "../photos/CNHK-26027/pano_11_b.jpg"]}, {"name": "飯廳", "thumb": "../photos/CNHK-26027/thumb_12.jpg", "faces": ["../photos/CNHK-26027/pano_12_l.jpg", "../photos/CNHK-26027/pano_12_r.jpg", "../photos/CNHK-26027/pano_12_u.jpg", "../photos/CNHK-26027/pano_12_d.jpg", "../photos/CNHK-26027/pano_12_f.jpg", "../photos/CNHK-26027/pano_12_b.jpg"]}]};
+var curTab = "pano", curScene = -1, renderer, scene, camera, controls, boxMesh, viewerReady = false;
+
+function switchTab(t){
+  curTab = t;
+  ["pano","photo","plan","link"].forEach(function(k){
+    document.getElementById("sec-"+k).style.display = (k==t) ? "block" : "none";
+    document.getElementById("tab-"+k).className = "tab" + (k==t ? " active" : "");
+  });
+  if(t=="pano" && viewerReady) onResize();
+}
+function initViewer(){
+  if(!DATA.scenes || !DATA.scenes.length) return;
+  var el = document.getElementById("viewer");
+  try{ renderer = new THREE.WebGLRenderer({antialias:true}); }
+  catch(e){ document.getElementById("pano-empty").style.display="block"; return; }
+  renderer.setPixelRatio(window.devicePixelRatio || 1);
+  el.appendChild(renderer.domElement);
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1100);
+  camera.position.set(0, 0, 0.01);
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enablePan = false;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.09;
+  controls.rotateSpeed = -0.22;
+  controls.minDistance = 1;
+  controls.maxDistance = 40;
+  boxMesh = new THREE.Mesh(
+    new THREE.BoxGeometry(100, 100, 100),
+    new THREE.MeshBasicMaterial({side: THREE.BackSide}));
+  scene.add(boxMesh);
+  var bar = document.getElementById("scenebar");
+  DATA.scenes.forEach(function(s, i){
+    var d = document.createElement("div");
+    d.className = "scn" + (i==0 ? " on" : "");
+    d.innerHTML = '<img src="' + s.thumb + '" alt=""/><span>' + s.name + '</span>';
+    d.onclick = function(){ loadScene(i); };
+    bar.appendChild(d);
+  });
+  window.addEventListener("resize", onResize);
+  onResize();
+  loadScene(0);
+  viewerReady = true;
+  (function animate(){
+    requestAnimationFrame(animate);
+    if(curTab != "pano") return;
+    controls.update();
+    renderer.render(scene, camera);
+  })();
+}
+function loadScene(i){
+  curScene = i;
+  var s = DATA.scenes[i];
+  var ld = document.getElementById("loading");
+  ld.style.display = "block"; ld.textContent = "全景載入中… (" + s.name + ")";
+  /* 面序 [l,r,u,d,f,b] 與中原官方 VR 檢視器完全一致 */
+  new THREE.CubeTextureLoader().load(s.faces.slice(), function(tex){
+    tex.magFilter = THREE.LinearFilter;
+    tex.minFilter = THREE.LinearFilter;
+    tex.generateMipmaps = false;
+    if(boxMesh.material.envMap) boxMesh.material.envMap.dispose();
+    boxMesh.material.envMap = tex;
+    boxMesh.material.needsUpdate = true;
+    ld.style.display = "none";
+  }, undefined, function(){
+    ld.textContent = "❌ 載入失敗，請重新整理";
+  });
+  var btns = document.querySelectorAll(".scn");
+  for(var k = 0; k < btns.length; k++) btns[k].className = "scn" + (k == i ? " on" : "");
+}
+function onResize(){
+  var el = document.getElementById("viewer");
+  if(!renderer || !el.clientWidth) return;
+  renderer.setSize(el.clientWidth, el.clientHeight);
+  camera.aspect = el.clientWidth / el.clientHeight;
+  camera.updateProjectionMatrix();
+}
+function toggleRotate(){
+  if(!controls) return;
+  controls.autoRotate = !controls.autoRotate;
+  controls.autoRotateSpeed = 0.6;
+  document.getElementById("btnRotate").className = "btn" + (controls.autoRotate ? " on" : "");
+}
+function goFull(){
+  var el = document.getElementById("sec-pano");
+  if(el.requestFullscreen) el.requestFullscreen();
+  else if(el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+  setTimeout(onResize, 300);
+}
+function openLb(src){
+  document.getElementById("lbimg").src = src;
+  document.getElementById("lightbox").classList.add("on");
+}
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape") document.getElementById("lightbox").classList.remove("on");
+  if(curTab == "pano" && DATA.scenes && DATA.scenes.length){
+    if(e.key === "ArrowLeft") loadScene((curScene - 1 + DATA.scenes.length) % DATA.scenes.length);
+    if(e.key === "ArrowRight") loadScene((curScene + 1) % DATA.scenes.length);
+  }
+});
+(function(){
+  if(!DATA.scenes || !DATA.scenes.length){
+    document.getElementById("pano-empty").style.display = "block";
+    document.getElementById("loading").style.display = "none";
+    switchTab("photo");
+  } else {
+    initViewer();
+  }
+})();
+</script>
+</body>
+</html>
