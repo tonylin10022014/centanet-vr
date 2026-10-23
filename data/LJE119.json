@@ -1,0 +1,141 @@
+{
+ "id": "LJE119",
+ "refNo": "LJE119",
+ "url": "https://hk.centanet.com/findproperty/zh-HK/detail/Central-8_LJE119?theme=buy",
+ "title": "半山捌號 高層 C室",
+ "estate": "半山捌號",
+ "district": "西半山",
+ "price": "售$850萬",
+ "area": "310呎",
+ "rooms": "1房",
+ "agent": "趙珊 (西半山樂信臺分行A組)",
+ "scraped_at": "2026-10-23 22:55:59",
+ "status": "OK",
+ "vr_links": [
+  "https://hkvr.centanet.com/?hid=CNHK-45455_0516e8c64111417880ba23c114c57801&useRoomArea=0&cn=0&aitour=1&staff=0&lang=hk"
+ ],
+ "scenes": [
+  {
+   "name": "大門",
+   "faces": [
+    "photos/LJE119/pano_01_l.jpg",
+    "photos/LJE119/pano_01_r.jpg",
+    "photos/LJE119/pano_01_u.jpg",
+    "photos/LJE119/pano_01_d.jpg",
+    "photos/LJE119/pano_01_f.jpg",
+    "photos/LJE119/pano_01_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_01.jpg"
+  },
+  {
+   "name": "客飯廳",
+   "faces": [
+    "photos/LJE119/pano_02_l.jpg",
+    "photos/LJE119/pano_02_r.jpg",
+    "photos/LJE119/pano_02_u.jpg",
+    "photos/LJE119/pano_02_d.jpg",
+    "photos/LJE119/pano_02_f.jpg",
+    "photos/LJE119/pano_02_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_02.jpg"
+  },
+  {
+   "name": "走廊",
+   "faces": [
+    "photos/LJE119/pano_03_l.jpg",
+    "photos/LJE119/pano_03_r.jpg",
+    "photos/LJE119/pano_03_u.jpg",
+    "photos/LJE119/pano_03_d.jpg",
+    "photos/LJE119/pano_03_f.jpg",
+    "photos/LJE119/pano_03_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_03.jpg"
+  },
+  {
+   "name": "浴室",
+   "faces": [
+    "photos/LJE119/pano_04_l.jpg",
+    "photos/LJE119/pano_04_r.jpg",
+    "photos/LJE119/pano_04_u.jpg",
+    "photos/LJE119/pano_04_d.jpg",
+    "photos/LJE119/pano_04_f.jpg",
+    "photos/LJE119/pano_04_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_04.jpg"
+  },
+  {
+   "name": "露台",
+   "faces": [
+    "photos/LJE119/pano_05_l.jpg",
+    "photos/LJE119/pano_05_r.jpg",
+    "photos/LJE119/pano_05_u.jpg",
+    "photos/LJE119/pano_05_d.jpg",
+    "photos/LJE119/pano_05_f.jpg",
+    "photos/LJE119/pano_05_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_05.jpg"
+  },
+  {
+   "name": "主人房",
+   "faces": [
+    "photos/LJE119/pano_06_l.jpg",
+    "photos/LJE119/pano_06_r.jpg",
+    "photos/LJE119/pano_06_u.jpg",
+    "photos/LJE119/pano_06_d.jpg",
+    "photos/LJE119/pano_06_f.jpg",
+    "photos/LJE119/pano_06_b.jpg"
+   ],
+   "thumb": "photos/LJE119/thumb_06.jpg"
+  }
+ ],
+ "photos": [
+  {
+   "file": "photos/LJE119/photo_01.jpg",
+   "desc": "單位內部-客廳",
+   "url": "https://hkais.centanet.com/Images/20251106/052513_b33eda7a-20a7-46bd-9f4f-8cdf7027af66.jpg?srotate=90"
+  },
+  {
+   "file": "photos/LJE119/photo_02.jpg",
+   "desc": "單位內部-浴室",
+   "url": "https://hkais.centanet.com/Images/20251106/052512_5e75b91d-55fe-4181-b25b-753f7c6b8162.jpg?srotate=90"
+  },
+  {
+   "file": "photos/LJE119/photo_03.jpg",
+   "desc": "單位內部-睡房",
+   "url": "https://hkais.centanet.com/Images/20251106/052511_6b9df828-c9cb-4574-82fe-a6261179e04d.jpg?srotate=90"
+  },
+  {
+   "file": "photos/LJE119/photo_04.jpg",
+   "desc": "單位內部-客廳",
+   "url": "https://hkais.centanet.com/Images/20251106/052510_850c466c-26b5-4139-a5bf-098fa4cfbfa5.jpg?srotate=90"
+  },
+  {
+   "file": "photos/LJE119/photo_05.jpg",
+   "desc": "單位內部-廚房",
+   "url": "https://hkais.centanet.com/Images/20251106/052508_faeb254f-85fe-44c7-aeac-6493fcdd9184.jpg?srotate=90"
+  }
+ ],
+ "plans": [
+  {
+   "file": "photos/LJE119/plan_01.png",
+   "desc": "FloorPlan",
+   "url": "https://hkcdn.centanet.com/imgresize/floorplan/newFP/202201/79686_2000_Centaline.png"
+  },
+  {
+   "file": "photos/LJE119/plan_02.png",
+   "desc": "單位平面圖",
+   "url": "https://hkcdn.centanet.com/imgresize/floorplan/newUP/202201/82310_2000_Centaline.png"
+  }
+ ],
+ "videos": [
+  {
+   "url": "https://centa-video.s3.ap-east-1.amazonaws.com/prod/mergedVideo/676f4045-41c6-47ec-b071-8a1d37b042ae_720.mp4",
+   "desc": "代理影片"
+  }
+ ],
+ "external_vr": [],
+ "cover": "photos/LJE119/cover.jpg",
+ "scene_count": 6,
+ "photo_count": 5,
+ "plan_count": 2
+}
