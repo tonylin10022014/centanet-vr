@@ -9,7 +9,7 @@
  "area": "",
  "rooms": "",
  "agent": "",
- "scraped_at": "2026-10-23 22:57:20",
+ "scraped_at": "2026-10-23 23:40:36",
  "status": "OK",
  "vr_links": [
   "https://hkvr.centanet.com/?hid=CNHK-26027_959f640491f74e35a734fb36376993df&useRoomArea=0&cn=0&aitour=1&staff=0&lang=hk"
@@ -17,147 +17,111 @@
  "scenes": [
   {
    "name": "大門",
-   "faces": [
-    "photos/CNHK-26027/pano_01_l.jpg",
-    "photos/CNHK-26027/pano_01_r.jpg",
-    "photos/CNHK-26027/pano_01_u.jpg",
-    "photos/CNHK-26027/pano_01_d.jpg",
-    "photos/CNHK-26027/pano_01_f.jpg",
-    "photos/CNHK-26027/pano_01_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_01.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_01_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161143.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_01.jpg",
+   "rot": 0
   },
   {
    "name": "走廊",
-   "faces": [
-    "photos/CNHK-26027/pano_02_l.jpg",
-    "photos/CNHK-26027/pano_02_r.jpg",
-    "photos/CNHK-26027/pano_02_u.jpg",
-    "photos/CNHK-26027/pano_02_d.jpg",
-    "photos/CNHK-26027/pano_02_f.jpg",
-    "photos/CNHK-26027/pano_02_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_02.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_02_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161604.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_02.jpg",
+   "rot": 0
   },
   {
    "name": "浴室",
-   "faces": [
-    "photos/CNHK-26027/pano_03_l.jpg",
-    "photos/CNHK-26027/pano_03_r.jpg",
-    "photos/CNHK-26027/pano_03_u.jpg",
-    "photos/CNHK-26027/pano_03_d.jpg",
-    "photos/CNHK-26027/pano_03_f.jpg",
-    "photos/CNHK-26027/pano_03_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_03.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_03_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161639.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_03.jpg",
+   "rot": 0
   },
   {
    "name": "睡房",
-   "faces": [
-    "photos/CNHK-26027/pano_04_l.jpg",
-    "photos/CNHK-26027/pano_04_r.jpg",
-    "photos/CNHK-26027/pano_04_u.jpg",
-    "photos/CNHK-26027/pano_04_d.jpg",
-    "photos/CNHK-26027/pano_04_f.jpg",
-    "photos/CNHK-26027/pano_04_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_04.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_04_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161733.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_04.jpg",
+   "rot": 0
   },
   {
    "name": "睡房 1",
-   "faces": [
-    "photos/CNHK-26027/pano_05_l.jpg",
-    "photos/CNHK-26027/pano_05_r.jpg",
-    "photos/CNHK-26027/pano_05_u.jpg",
-    "photos/CNHK-26027/pano_05_d.jpg",
-    "photos/CNHK-26027/pano_05_f.jpg",
-    "photos/CNHK-26027/pano_05_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_05.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_05_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161823.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_05.jpg",
+   "rot": 0.0244
   },
   {
    "name": "走廊",
-   "faces": [
-    "photos/CNHK-26027/pano_06_l.jpg",
-    "photos/CNHK-26027/pano_06_r.jpg",
-    "photos/CNHK-26027/pano_06_u.jpg",
-    "photos/CNHK-26027/pano_06_d.jpg",
-    "photos/CNHK-26027/pano_06_f.jpg",
-    "photos/CNHK-26027/pano_06_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_06.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_06_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161908.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_06.jpg",
+   "rot": 0
   },
   {
    "name": "主人房",
-   "faces": [
-    "photos/CNHK-26027/pano_07_l.jpg",
-    "photos/CNHK-26027/pano_07_r.jpg",
-    "photos/CNHK-26027/pano_07_u.jpg",
-    "photos/CNHK-26027/pano_07_d.jpg",
-    "photos/CNHK-26027/pano_07_f.jpg",
-    "photos/CNHK-26027/pano_07_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_07.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_07_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620162002.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_07.jpg",
+   "rot": 0
   },
   {
    "name": "主人浴室",
-   "faces": [
-    "photos/CNHK-26027/pano_08_l.jpg",
-    "photos/CNHK-26027/pano_08_r.jpg",
-    "photos/CNHK-26027/pano_08_u.jpg",
-    "photos/CNHK-26027/pano_08_d.jpg",
-    "photos/CNHK-26027/pano_08_f.jpg",
-    "photos/CNHK-26027/pano_08_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_08.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_08_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620162038.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_08.jpg",
+   "rot": 0.0104
   },
   {
    "name": "工人房",
-   "faces": [
-    "photos/CNHK-26027/pano_09_l.jpg",
-    "photos/CNHK-26027/pano_09_r.jpg",
-    "photos/CNHK-26027/pano_09_u.jpg",
-    "photos/CNHK-26027/pano_09_d.jpg",
-    "photos/CNHK-26027/pano_09_f.jpg",
-    "photos/CNHK-26027/pano_09_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_09.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_09_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161301.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_09.jpg",
+   "rot": 0.0104
   },
   {
    "name": "客廳",
-   "faces": [
-    "photos/CNHK-26027/pano_10_l.jpg",
-    "photos/CNHK-26027/pano_10_r.jpg",
-    "photos/CNHK-26027/pano_10_u.jpg",
-    "photos/CNHK-26027/pano_10_d.jpg",
-    "photos/CNHK-26027/pano_10_f.jpg",
-    "photos/CNHK-26027/pano_10_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_10.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_10_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620162406.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_10.jpg",
+   "rot": 0.0279
   },
   {
    "name": "廚房",
-   "faces": [
-    "photos/CNHK-26027/pano_11_l.jpg",
-    "photos/CNHK-26027/pano_11_r.jpg",
-    "photos/CNHK-26027/pano_11_u.jpg",
-    "photos/CNHK-26027/pano_11_d.jpg",
-    "photos/CNHK-26027/pano_11_f.jpg",
-    "photos/CNHK-26027/pano_11_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_11.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_11_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620161443.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_11.jpg",
+   "rot": -0.0454
   },
   {
    "name": "飯廳",
-   "faces": [
-    "photos/CNHK-26027/pano_12_l.jpg",
-    "photos/CNHK-26027/pano_12_r.jpg",
-    "photos/CNHK-26027/pano_12_u.jpg",
-    "photos/CNHK-26027/pano_12_d.jpg",
-    "photos/CNHK-26027/pano_12_f.jpg",
-    "photos/CNHK-26027/pano_12_b.jpg"
-   ],
-   "thumb": "photos/CNHK-26027/thumb_12.jpg"
+   "type": "equirect",
+   "img": "photos/CNHK-26027/pano_12_equirect.jpg",
+   "img_url": "https://hkvrdata.centanet.com/CNHK-26027_959f640491f74e35a734fb36376993df/PanoramaImages/20260620162250.jpg",
+   "faces": [],
+   "thumb": "photos/CNHK-26027/thumb_12.jpg",
+   "rot": -0.0489
   }
  ],
  "photos": [],
